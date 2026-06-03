@@ -36,4 +36,4 @@ def predict(ruta_audio, modelos):
 
 if __name__ == '__main__':
     gmm = entrenar_gmm()
-    joblib.dump(gmm, 'modelos/gmm.joblib')
+    joblib.dump(gmm, 'modelos/modelos_gmm.joblib')
