@@ -32,7 +32,8 @@ def copiar():
     # os.walk recorre la estructura de carpetas de forma recursiva (de arriba hacia abajo)
     for carpeta_actual, _, archivos in os.walk('dataset_original'):
         palabra = re.sub(r'dataset_original/', '', carpeta_actual)
-        if palabra in ['dataset_original', '_background_noise_']:
+        #if palabra in ['dataset_original', '_background_noise_']:
+        if palabra not in palabras:
             continue
         for archivo in archivos:
             ruta_completa_origen = os.path.join(carpeta_actual, archivo)
