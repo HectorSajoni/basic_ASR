@@ -13,7 +13,7 @@ with open("dataset_original/validation_list.txt", "r", encoding="utf-8") as arch
     validation_list = [linea.strip() for linea in archivo]
 
 testing_list += validation_list
-palabras = ['yes', 'no', 'up', 'down', 'right', 'left']
+palabras = ['yes', 'no', 'up', 'down', 'right', 'left', 'zero', 'one', 'two', 'three', 'four', 'five']
 
 try:
     shutil.rmtree('dataset')

@@ -1,6 +1,5 @@
 import librosa
 import numpy as np
-import scipy.signal
 
 def reduccion_ruido_espectral(y, sr, n_fft=1024, ruido_frames=5):
     # Estimar ruido de los primeros 'ruido_frames' frames
