@@ -1,0 +1,2 @@
+El accuracy de gmm es: 0.7152124554005839 y su WER es : 0.28478754459941613
+El accuracy de hmm es: 0.7766785598443074 y su WER es : 0.22332144015569255

@@ -22,8 +22,8 @@ def evaluar(modelos, carpeta_test, predecir_func):
     wer = 1 - acc
     return acc, wer
 
-gmm_acc, gmm_wer = evaluar(modelos_gmm, carpeta_test, ent.predecir_gmm)
-hmm_acc, hmm_wer = evaluar(modelos_hmm, carpeta_test, ent.predecir_hmm)
+gmm_acc, gmm_wer = evaluar(modelos_gmm, carpeta_test, ent.predict)
+hmm_acc, hmm_wer = evaluar(modelos_hmm, carpeta_test, ent.predict)
 
 print(f'El accuracy de gmm es: {gmm_acc} y su WER es : {gmm_wer}')
 print(f'El accuracy de hmm es: {hmm_acc} y su WER es : {hmm_wer}')
